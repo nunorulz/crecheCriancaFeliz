@@ -7,97 +7,102 @@
   <meta name="description" content="Página inicial">
   <title>Creche e Berçario Criança Feliz</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1><a href="index.html"><img id="logo" src="img/logotipo.png" alt="Logotipo Criança Feliz"></a></h1>
-    <nav>
-      <ul id="menu">
-        <li class="btn-nav"><a href="quemSomos.html">Quem Somos</a></li>
-        <li class="btn-nav"><a href="colaboradores.html">Colaboradores</a></li>
-        <li class="btn-nav"><a href="planos.html">Planos</a></li>
-        <li class="btn-nav"><a href="estrutura.html">Estrutura</a></li>
-        <li class="btn-nav"><a href="contato.html">Contato</a></li>
-        <li class="btn-cta"><a href="#">Agende uma Visita</a></li>
+  <header class="w-10/12 mx-auto max-w-[1200px]">
+    <div class="lg:flex md:justify-between md:items-center py-6">
+      <div class="flex justify-between items-center">
+        <h1><a href="index.html"><img src="img/logotipo.png" alt="Logotipo Criança Feliz"></a></h1>
+        <span class="text-4xl cursor-pointer md:hidden block text-roxo">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      <ul class="text-[1rem] md:flex md:items-center uppercase font-medium text-roxo md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-400">
+        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="quemSomos.html">Quem Somos</a></li>
+        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="colaboradores.html">Colaboradores</a></li>
+        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="planos.html">Planos</a></li>
+        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="estrutura.html">Estrutura</a></li>
+        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="contato.html">Contato</a></li>
+        <li class="my-4 md:my-0"><a class="bg-verde hover:bg-verdeHover duration-500 text-white px-4 py-2 rounded-full" href="#">Agende uma Visita</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
   <div>
-    <img width="100%" src="img/bannerPrincipal.jpg" alt="Imagem banner principal com uma criança sorrindo">
+    <img class="w-full" src="img/bannerPrincipal.jpg" alt="Imagem banner principal com uma criança sorrindo">
   </div>
   <!--Início Sobre a Criança Feliz-->
-  <section class="sectionSobre">
-    <div class="wrap-sobre">
-      <div class="padding-dir">
-        <h2 class="titulo-sobre border-bottom-622363">Sobre a Criança Feliz</h2>
-        <p class="texto-sobre">A <em>Creche Criança Feliz</em> é mais do que uma instituição de cuidados infantis; somos uma família que se preocupa com o bem-estar e o futuro de suas crianças. Estamos comprometidos em criar um ambiente onde as crianças possam crescer, aprender e, acima de tudo, serem felizes. Obrigado por considerar a Creche Criança Feliz como seu parceiro de confiança na educação e cuidado de suas crianças. Estamos ansiosos para recebê-los em nossa comunidade.</p>
-        <a class="btn-cta-sobre" href="quemSomos.html">Leia mais sobre nós</a>
+  <section class="py-10 md:py-24 bg-cinzaNuvem">
+    <div class="md:flex w-10/12 mx-auto max-w-[1200px]">
+      <div class="mb-8 md:w-2/3">
+        <h2 class="text-3xl font-semibold text-turqueza mb-6">Sobre a Criança Feliz</h2>
+        <p class="text-[1rem] mb-8 md:pr-10">A <em>Creche Criança Feliz</em> é mais do que uma instituição de cuidados infantis; somos uma família que se preocupa com o bem-estar e o futuro de suas crianças. Estamos comprometidos em criar um ambiente onde as crianças possam crescer, aprender e, acima de tudo, serem felizes. Obrigado por considerar a Creche Criança Feliz como seu parceiro de confiança na educação e cuidado de suas crianças. Estamos ansiosos para recebê-los em nossa comunidade.</p>
+        <a class="uppercase bg-rosa hover:bg-rosaHover text-white px-4 py-2 rounded-full text-sm" href="quemSomos.html">Leia mais sobre nós</a>
       </div>
-      <div>
-        <img src="img/imagem_sobre_home.png" alt="Imagem da Creche">
+      <div class="md:w-1/3">
+        <img class="w-full" src="img/imagem_sobre_home.png" alt="Imagem da Creche">
       </div>
     </div>
   </section>
   <!--Fim Sobre a Criança Feliz-->
 
   <!--Banner-->
-  <div><img width="100%" src="img/vetorNuvemSobre.png"></div>
+  <div><img class="w-full" src="img/vetorNuvemSobre.png"></div>
 
   <!--Início Nossos Colaboradores-->
-  <section class="sectionColaboradores">
-    <div class="wrap-colaboradores">
+  <section class="w-10/12 mx-auto max-w-[1200px] py-10 md:py-24">
+    <div class="">
       <div>
-        <h2 class="titulo-colaboradores border-bottom-622363">Nossos Colaboradores</h2>
+        <h2 class="text-3xl font-semibold text-turqueza mb-6 md:text-center">Nossos Colaboradores</h2>
       </div>
-      <div class="container-cards">
-        <article>
-          <img class="imagem-perfil" src="img/colaboradores/anaLuiza.png" alt="Ana Luiza">
-          <div class="card-rosa">
-            <h3>Ana Luiza</h3>
-            <p>Coord. Pedagógica</p>
-            <div class="box-icones">
+      <div class="md:flex md:justify-between space-y-6">
+        <article class="w-full flex flex-col items-center md:pt-6">
+          <div class="z-10 mb-[-40px]"><img src="img/colaboradores/pedroFelipe.png" alt="Ana Luiza"></div>
+          <div class="bg-rosaLeve w-10/12 rounded-xl pb-4 px-10 pt-12">
+            <h3 class="text-center font-semibold text-2xl">Ana Luiza</h3>
+            <p class="text-center">Coord. Pedagógica</p>
+            <div class="flex justify-center bg-white py-2 space-x-4 rounded-full mt-3">
               <a href="#"><img src="img/colaboradores/iconeLinkedin.png" alt="Linkedin"></a>
               <a href="#"><img src="img/colaboradores/iconeInsta.png" alt="Instagram"></a>
               <a href="#"><img src="img/colaboradores/iconeFacebook.png" alt="Facebook"></a>
             </div>
           </div>
         </article>
-        <article>
-          <img class="imagem-perfil" src="img/colaboradores/mariaPaula.png" alt="Maria Paula">
-          <div class="card-verde">
-            <h3>Maria Paula</h3>
-            <p>Profª Inglês</p>
-            <div class="box-icones">
+        <article class="w-full flex flex-col items-center">
+          <div class="z-10 mb-[-40px]"><img src="img/colaboradores/pedroFelipe.png" alt="Ana Luiza"></div>
+          <div class="bg-ciano w-10/12 rounded-xl pb-4 px-10 pt-12">
+            <h3 class="text-center font-semibold text-2xl">Maria Paula</h3>
+            <p class="text-center">Coord. Pedagógica</p>
+            <div class="flex justify-center bg-white py-2 space-x-4 rounded-full mt-3">
               <a href="#"><img src="img/colaboradores/iconeLinkedin.png" alt="Linkedin"></a>
               <a href="#"><img src="img/colaboradores/iconeInsta.png" alt="Instagram"></a>
               <a href="#"><img src="img/colaboradores/iconeFacebook.png" alt="Facebook"></a>
             </div>
           </div>
         </article>
-        <article>
-          <img class="imagem-perfil" src="img/colaboradores/lailaCristina.png" alt="Laila Cristina">
-          <div class="card-rosa">
-            <h3>Laila Cristina</h3>
-            <p>Instr. de Recreação</p>
-            <div class="box-icones">
+        <article class="w-full flex flex-col items-center">
+          <div class="z-10 mb-[-40px]"><img src="img/colaboradores/pedroFelipe.png" alt="Ana Luiza"></div>
+          <div class="bg-rosaLeve w-10/12 rounded-xl pb-4 px-10 pt-12">
+            <h3 class="text-center font-semibold text-2xl">Laila Cristina</h3>
+            <p class="text-center">Coord. Pedagógica</p>
+            <div class="flex justify-center bg-white py-2 space-x-4 rounded-full mt-3">
               <a href="#"><img src="img/colaboradores/iconeLinkedin.png" alt="Linkedin"></a>
               <a href="#"><img src="img/colaboradores/iconeInsta.png" alt="Instagram"></a>
               <a href="#"><img src="img/colaboradores/iconeFacebook.png" alt="Facebook"></a>
             </div>
           </div>
         </article>
-        <article>
-          <img class="imagem-perfil" src="img/colaboradores/pedroFelipe.png" alt="Pedro Felipe">
-          <div class="card-verde">
-            <h3>Pedro Felipe</h3>
-            <p>Prof Artes</p>
-            <div class="box-icones">
+        <article class="w-full flex flex-col items-center">
+          <div class="z-10 mb-[-40px]"><img src="img/colaboradores/pedroFelipe.png" alt="Ana Luiza"></div>
+          <div class="bg-ciano w-10/12 rounded-xl pb-4 px-10 pt-12">
+            <h3 class="text-center font-semibold text-2xl">Pedro Felipe</h3>
+            <p class="text-center">Coord. Pedagógica</p>
+            <div class="flex justify-center bg-white py-2 space-x-4 rounded-full mt-3">
               <a href="#"><img src="img/colaboradores/iconeLinkedin.png" alt="Linkedin"></a>
               <a href="#"><img src="img/colaboradores/iconeInsta.png" alt="Instagram"></a>
               <a href="#"><img src="img/colaboradores/iconeFacebook.png" alt="Facebook"></a>
@@ -105,68 +110,64 @@
           </div>
         </article>
       </div>
-      <div>
-        <a class="btn-cta-colaboradores" href="colaboradores.html">Ver todos os colaboradores</a>
+      <div class="mt-8 text-center">
+        <a class="uppercase bg-rosa hover:bg-rosaHover text-white px-4 py-2 rounded-full text-sm" href="colaboradores.html">Ver todos os colaboradores</a>
       </div>
     </div>
   </section>
   <!--Fim Nossos Colaboradores-->
   <!--Início Nossa Estrutura-->
-  <img style="margin-bottom: -1rem;" width="100%" src="img/vetorNossaEstrutura.png">
-  <section class="sectionEstrutura">
-    <div class="wrap-estrutura">
+  <img class="w-full" src="img/vetorNossaEstrutura.png">
+  <section class="bg-ciano">
+    <div class="w-10/12 mx-auto max-w-[1200px] py-10 md:py-24">
       <div>
-        <h2 class="titulo-estrutura border-bottom-622363">Nossa Estrutura</h2>
+        <h2 class="text-3xl font-semibold text-turqueza mb-8 md:text-center">Nossa Estrutura</h2>
       </div>
-      <div class="container-imagens">
-        <article class="box-imagem">
+      <div class="md:flex md:justify-between space-y-6 md:space-y-0">
+        <article class="bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
           <img src="img/nossaEstrutura/brinquedoteca.png" alt="Brinquedoteca">
-          <figcaption class="texto-imagem">Brinquedoteca</figcaption>
+          <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Brinquedoteca</figcaption>
         </article>
-        <article class="box-imagem">
+        <article class="bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
           <img src="img/nossaEstrutura/playground.png" alt="Playground">
-          <figcaption class="texto-imagem">Playground</figcaption>
+          <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Playground</figcaption>
         </article>
-        <article class="box-imagem">
+        <article class="bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
           <img src="img/nossaEstrutura/park.png" alt="Park kids interno">
-          <figcaption class="texto-imagem">Park kids interno</figcaption>
+          <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Park kids interno</figcaption>
         </article>
-        <article class="box-imagem">
+        <article class="bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
           <img src="img/nossaEstrutura/bercarios.png" alt="Berçarios">
-          <figcaption class="texto-imagem">Berçarios</figcaption>
+          <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Berçarios</figcaption>
         </article>
       </div>
     </div>
   </section>
   <!--Fim Nossa Estrutura-->
   <!--Início Nossos Planos-->
-  <section class="sectionPlanos">
-    <div class="wrap-planos">
-      <div>
-        <img src="img/nossosPlanos/imaNossosPlanosHome.png" alt="Imagem">
+  <section class="bg-amarelo">
+    <div class="w-10/12 mx-auto max-w-[1200px] py-10 md:py-24 flex flex-col-reverse md:flex-row md:items-center md:space-x-4">
+      <div class="mt-8 md:w-1/2">
+        <img class="w-full" src="img/nossosPlanos/imaNossosPlanosHome.png" alt="Imagem">
       </div>
-      <div class="wrap-box">
-        <div class="titulo-planos-wrap">
-          <h2 class="titulo-planos border-bottom-FFFFFF">Nossos planos</h2>
+      <div class="md:w-1/2">
+        <div class="">
+          <h2 class="text-3xl font-semibold text-turqueza mb-8 text-center md:text-left">Nossos planos</h2>
         </div>
-        <div class="box-planos">
-          <article class="box-meio-periodo">
-            <h3 class="box-titulo">Meio período</h3>
-            <div>
-              <p class="texto-box">Mussum Ipsum, cacilds vidis litro abertis.</p>
-              <p class="texto-box">Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Admodum accumsan disputationi</p>
-              <p class="texto-box">Vide electram sadipscing et per.</p>
+        <div class="space-y-6 md:space-y-0 md:flex md:space-x-4">
+          <article class="bg-roxo p-5 rounded-xl">
+            <h3 class="bg-white uppercase text-roxo font-semibold text-center py-2 rounded-md text-2xl">Meio período</h3>
+            <div class="py-6">
+              <p class="text-white">Mussum Ipsum, cacilds vidis litro abertis. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Admodum accumsan disputationi. Vide electram sadipscing et per.</p>
             </div>
-            <div class="cta-planos"><a href="#">saiba mais</a></div>
+            <div class="bg-white uppercase text-roxo font-semibold text-center py-[1px] rounded-md text-xl"><a href="#">saiba mais</a></div>
           </article>
-          <article class="box-periodo-integral">
-            <h3 class="box-titulo">Período integral</h3>
-            <div class="texto-box">
-              <p class="texto-box">Mussum Ipsum, cacilds vidis litro abertis.</p>
-              <p class="texto-box">Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Admodum accumsan disputationi</p>
-              <p class="texto-box">Vide electram sadipscing et per.</p>
+          <article class="bg-turqueza p-5 rounded-xl">
+            <h3 class="bg-white uppercase text-turqueza font-semibold text-center py-2 rounded-md text-2xl">Período integral</h3>
+            <div class="py-6">
+              <p class="text-white">Mussum Ipsum, cacilds vidis litro abertis. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Admodum accumsan disputationi. Vide electram sadipscing et per.</p>
             </div>
-            <div class="cta-planos"><a href="#">saiba mais</a></div>
+            <div class="bg-white uppercase text-roxo font-semibold text-center py-[1px] rounded-md text-xl"><a href="#">saiba mais</a></div>
           </article>
         </div>
       </div>
@@ -174,70 +175,79 @@
   </section>
   <!--Fim Nossos Planos-->
   <!--Início Mapa / Fale Conosco-->
-  <section class="sectionContato">
-    <div class="sectionMapa">
+  <section class="md:flex">
+    <div class="hidden md:block md:w-1/2">
       <!-- <div class="mapa-background"></div> -->
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.545853571055!2d-49.33107482386399!3d-20.76919356499047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bc52fec8257049%3A0x848a0aefd6092b4d!2sAv.%20Jos%C3%A9%20da%20Silva%20S%C3%A9%2C%20405%20-%20Parque%20da%20Liberdade%2C%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%20-%20SP%2C%2015056-750!5e0!3m2!1spt-BR!2sbr!4v1701699148371!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
     </div>
-    <div class="sectionForm">
+    <div class="w-10/12 md:w-1/2 mx-auto py-10 md:py-24">
       <!-- Conteúdo da segunda div -->
-      <div class="form-header">
-        <h2 class="border-bottom-58BB29">Fale conosco</h2>
+      <div class="">
+        <h2 class="text-3xl font-semibold text-turqueza mb-8 text-center">Fale conosco</h2>
       </div>
-      <form action="processar_formulario.php" method="post">
-        <div style="display: flex; flex-direction: column; margin-bottom: 1rem;">
-          <label for="nome">Nome completo:</label>
-          <input class="inputform" type="text" id="nome" name="nome" required>
-        </div>
-        <div style="display: flex; flex-direction: column; margin-bottom: 1rem;">
-          <label for="whatsapp">Whatsapp:</label>
-          <input class="inputform" type="tel" id="whatsapp" name="whatsapp" required>
-        </div>
-        <div style="display: flex; flex-direction: column; margin-bottom: 1rem;">
-          <label for="email">E-mail:</label>
-          <input class="inputform" type="email" id="email" name="email" required>
-        </div>
-        <div style="display: flex; flex-direction: column; margin-bottom: 1rem;">
-          <label for="assunto">Assunto:</label>
-          <input class="inputform" type="text" id="assunto" name="assunto" required>
-        </div>
-        <div style="display: flex; flex-direction: column; margin-bottom: 1rem;">
-          <label for="mensagem">Mensagem:</label>
-          <textarea class="inputform" type="text" id="mensagem" name="mensagem" rows="6"></textarea>
-        </div>
-        <button class="btn-form" type="submit">Enviar</button>
-      </form>
+      <div class="md:w-10/12 md:mx-auto">
+        <form class="space-y-3" action="processar_formulario.php" method="post">
+          <div class="flex flex-col space-y-1">
+            <label for="nome">Nome completo:</label>
+            <input class="border-2 border-slate-400 rounded py-2 px-4" type="text" id="nome" name="nome" required>
+          </div>
+          <div class="flex flex-col space-y-1">
+            <label for="whatsapp">Whatsapp:</label>
+            <input class="border-2 border-slate-400 rounded py-2 px-4" type="tel" id="whatsapp" name="whatsapp" required>
+          </div>
+          <div class="flex flex-col space-y-1">
+            <label for="email">E-mail:</label>
+            <input class="border-2 border-slate-400 rounded py-2 px-4" type="email" id="email" name="email" required>
+          </div>
+          <div class="flex flex-col space-y-1">
+            <label for="assunto">Assunto:</label>
+            <input class="border-2 border-slate-400 rounded py-2 px-4" type="text" id="assunto" name="assunto" required>
+          </div>
+          <div class="flex flex-col space-y-1">
+            <label for="mensagem">Mensagem:</label>
+            <textarea class="border-2 border-slate-400 rounded py-2 px-4" type="text" id="mensagem" name="mensagem" rows="6"></textarea>
+          </div>
+          <button class="bg-turqueza hover:bg-roxo w-full text-white py-2 uppercase rounded-md mt-4" type="submit">Enviar</button>
+        </form>
+      </div>
     </div>
   </section>
   <!--Fim Mapa / Fale Conosco-->
   <!--Início Rodapé-->
-  <footer class="border-bottom-622363">
-    <div class="footer-div">
-      <h4><img src="img/logotipo.png"></h4>
-    </div>
-    <div class="footer-div">
-      <h4>Endereço</h4>
-      <p>Avenida Jose da Silva, 1059, Centro<br />
-        São Jose dos Campos - SP<br />
-        CEP 045826-589</p>
-    </div>
-    <div class="footer-div">
-      <h4>Horário de atendimento</h4>
-      <p>Segunda a Sexta-feira<br />
-        Das 07:00 as 18:00</p>
-    </div>
-    <div class="footer-div">
-      <h4>Siga em nossas redes</h4>
-      <div class="social-media">
-        <a href="#"><img src="img/colaboradores/iconeLinkedin.png" alt="Linkedin"></a>
-        <a href="#"><img src="img/colaboradores/iconeInsta.png" alt="Instagram"></a>
-        <a href="#"><img src="img/colaboradores/iconeFacebook.png" alt="Facebook"></a>
+  <footer class="bg-cinzaNuvem border-b-8 border-roxo">
+    <div class="w-10/12 mx-auto space-y-3 py-8 md:flex md:justify-between">
+      <div class="flex justify-center mb-4">
+        <h4><img src="img/logotipo.png"></h4>
+      </div>
+      <div class="">
+        <h4 class="text-roxo uppercase font-semibold">Endereço</h4>
+        <p class="">Avenida Jose da Silva, 1059, Centro<br />
+          São Jose dos Campos - SP<br />
+          CEP 045826-589</p>
+      </div>
+      <div class="">
+        <h4 class="text-roxo uppercase font-semibold">Horário de atendimento</h4>
+        <p>Segunda a Sexta-feira<br />
+          Das 07:00 as 18:00</p>
+      </div>
+      <div class="">
+        <h4 class="text-roxo uppercase font-semibold">Siga em nossas redes</h4>
+        <div class="flex space-x-4 mt-2">
+          <a href="#"><img src="img/colaboradores/iconeLinkedin.png" alt="Linkedin"></a>
+          <a href="#"><img src="img/colaboradores/iconeInsta.png" alt="Instagram"></a>
+          <a href="#"><img src="img/colaboradores/iconeFacebook.png" alt="Facebook"></a>
+        </div>
       </div>
     </div>
   </footer>
   <!--Início Rodapé-->
+  <script>
+    function Menu(e) {
+      let list = document.querySelector('ul');
 
+      e.name === 'menu' ? (e.name = "close", list.classList.add('top-[130px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[130px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
 </body>
 
 </html>

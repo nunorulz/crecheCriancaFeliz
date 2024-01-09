@@ -5,29 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Página inicial">
-  <title>Contato - Creche e Berçario Criança Feliz</title>
+  <title>Contato</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1><a href="index.html"><img id="logo" src="img/logotipo.png" alt="Logotipo Criança Feliz"></a></h1>
-    <nav>
-      <ul id="menu">
-        <li class="btn-nav"><a href="quemSomos.html">Quem Somos</a></li>
-        <li class="btn-nav"><a href="colaboradores.html">Colaboradores</a></li>
-        <li class="btn-nav"><a href="planos.html">Planos</a></li>
-        <li class="btn-nav"><a href="estrutura.html">Estrutura</a></li>
-        <li class="btn-nav"><a href="contato.html">Contato</a></li>
-        <li class="btn-cta"><a href="#">Agende uma Visita</a></li>
+  <header class="w-10/12 mx-auto max-w-[1200px]">
+    <div class="lg:flex md:justify-between md:items-center py-6">
+      <div class="flex justify-between items-center">
+        <h1><a href="index.html"><img src="img/logotipo.png" alt="Logotipo Criança Feliz"></a></h1>
+        <span class="text-4xl cursor-pointer md:hidden block text-roxo">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      <ul class="text-[1rem] md:flex md:items-center uppercase font-medium text-roxo md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-400">
+        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="quemSomos.html">Quem Somos</a></li>
+        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="colaboradores.html">Colaboradores</a></li>
+        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="planos.html">Planos</a></li>
+        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="estrutura.html">Estrutura</a></li>
+        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="contato.html">Contato</a></li>
+        <li class="my-4 md:my-0"><a class="bg-verde hover:bg-verdeHover duration-500 text-white px-4 py-2 rounded-full" href="#">Agende uma Visita</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
   <div>
     <img width="100%" src="img/contato/bannerContato.png" alt="Imagem banner principal com uma criança sorrindo">
@@ -82,30 +86,39 @@
 
 
   <!--Fim Mapa / Fale Conosco-->
-  <footer class="border-bottom-622363">
-    <div class="footer-div">
-      <h4><img src="img/logotipo.png"></h4>
-    </div>
-    <div class="footer-div">
-      <h4>Endereço</h4>
-      <p>Avenida Jose da Silva, 1059, Centro<br />
-        São Jose dos Campos - SP<br />
-        CEP 045826-589</p>
-    </div>
-    <div class="footer-div">
-      <h4>Horário de atendimento</h4>
-      <p>Segunda a Sexta-feira<br />
-        Das 07:00 as 18:00</p>
-    </div>
-    <div class="footer-div">
-      <h4>Siga em nossas redes</h4>
-      <div class="social-media">
-        <a href="#"><img src="img/colaboradores/iconeLinkedin.png" alt="Linkedin"></a>
-        <a href="#"><img src="img/colaboradores/iconeInsta.png" alt="Instagram"></a>
-        <a href="#"><img src="img/colaboradores/iconeFacebook.png" alt="Facebook"></a>
+  <footer class="bg-cinzaNuvem border-b-8 border-roxo">
+    <div class="w-10/12 mx-auto space-y-3 py-8 md:flex md:justify-between">
+      <div class="flex justify-center mb-4">
+        <h4><img src="img/logotipo.png"></h4>
+      </div>
+      <div class="">
+        <h4 class="text-roxo uppercase font-semibold">Endereço</h4>
+        <p class="">Avenida Jose da Silva, 1059, Centro<br />
+          São Jose dos Campos - SP<br />
+          CEP 045826-589</p>
+      </div>
+      <div class="">
+        <h4 class="text-roxo uppercase font-semibold">Horário de atendimento</h4>
+        <p>Segunda a Sexta-feira<br />
+          Das 07:00 as 18:00</p>
+      </div>
+      <div class="">
+        <h4 class="text-roxo uppercase font-semibold">Siga em nossas redes</h4>
+        <div class="flex space-x-4 mt-2">
+          <a href="#"><img src="img/colaboradores/iconeLinkedin.png" alt="Linkedin"></a>
+          <a href="#"><img src="img/colaboradores/iconeInsta.png" alt="Instagram"></a>
+          <a href="#"><img src="img/colaboradores/iconeFacebook.png" alt="Facebook"></a>
+        </div>
       </div>
     </div>
   </footer>
+  <script>
+    function Menu(e) {
+      let list = document.querySelector('ul');
+
+      e.name === 'menu' ? (e.name = "close", list.classList.add('top-[130px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[130px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
 </body>
 
 </html>
