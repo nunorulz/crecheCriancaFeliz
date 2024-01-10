@@ -29,7 +29,7 @@
         <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="planos.html">Planos</a></li>
         <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="estrutura.html">Estrutura</a></li>
         <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="contato.html">Contato</a></li>
-        <li class="my-4 md:my-0"><a class="bg-verde hover:bg-verdeHover duration-500 text-white px-4 py-2 rounded-full" href="#">Agende uma Visita</a></li>
+        <li class="my-4 md:my-0"><a class="bg-verde hover:bg-verdeHover duration-500 text-white px-4 py-2 rounded-full" href="https://wa.me/5581996027742">Agende uma Visita</a></li>
       </ul>
     </div>
   </header>
@@ -204,7 +204,7 @@
 
       <p class="text-white text-3xl">Agende uma visita e saiba mais sobre nossos colaboradores</p>
       <div>
-        <button class="bg-verde hover:bg-verdeHover text-white uppercase px-8 py-4 rounded-full">Agendar Visita</button>
+        <button onclick="abrirWhatsapp()" class="bg-verde hover:bg-verdeHover text-white uppercase px-8 py-4 rounded-full">Agendar Visita</button>
       </div>
 
     </div>
@@ -240,6 +240,15 @@
       let list = document.querySelector('ul');
 
       e.name === 'menu' ? (e.name = "close", list.classList.add('top-[130px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[130px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
+  <script>
+    function abrirWhatsapp() {
+      // Substitua 'https://www.example.com' pela URL que você deseja abrir
+      let url = 'https://wa.me/5581996027742';
+
+      // Abre a URL em uma nova janela/tab
+      window.open(url, '_blank');
     }
   </script>
 </body>

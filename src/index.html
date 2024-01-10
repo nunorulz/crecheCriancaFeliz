@@ -8,6 +8,8 @@
   <title>Creche e Berçario Criança Feliz</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/validacao.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap">
@@ -33,12 +35,16 @@
         </span>
       </div>
       <ul class="text-[1rem] md:flex md:items-center uppercase font-medium text-roxo md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-100">
-        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="quemSomos.html">Quem Somos</a></li>
-        <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="colaboradores.html">Colaboradores</a></li>
+        <li class="my-4 md:my-0">
+          <a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="quemSomos.html">Quem Somos</a>
+        </li>
+        <li class="my-4 md:my-0">
+          <a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="colaboradores.html">Colaboradores</a>
+        </li>
         <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="planos.html">Planos</a></li>
         <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="estrutura.html">Estrutura</a></li>
         <li class="my-4 md:my-0"><a class="hover:bg-roxo hover:text-white duration-500 px-4 py-2 rounded-full" href="contato.html">Contato</a></li>
-        <li class="my-4 md:my-0"><a class="bg-verde hover:bg-verdeHover duration-500 text-white px-4 py-2 rounded-full" href="#">Agende uma Visita</a></li>
+        <li class="my-4 md:my-0"><a class="bg-verde hover:bg-verdeHover duration-500 text-white px-4 py-2 rounded-full" href="https://wa.me/5581996027742" target="_blank">Agende uma Visita</a></li>
       </ul>
     </div>
   </header>
@@ -132,23 +138,35 @@
       <div>
         <h2 class="text-3xl font-semibold text-turqueza mb-8 md:text-center">Nossa Estrutura</h2>
       </div>
-      <div class="md:flex md:justify-between space-y-6 md:space-y-0">
-        <article class="bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
-          <img src="img/nossaEstrutura/brinquedoteca.png" alt="Brinquedoteca">
-          <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Brinquedoteca</figcaption>
-        </article>
-        <article class="bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
-          <img src="img/nossaEstrutura/playground.png" alt="Playground">
-          <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Playground</figcaption>
-        </article>
-        <article class="bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
-          <img src="img/nossaEstrutura/park.png" alt="Park kids interno">
-          <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Park kids interno</figcaption>
-        </article>
-        <article class="bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
-          <img src="img/nossaEstrutura/bercarios.png" alt="Berçarios">
-          <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Berçarios</figcaption>
-        </article>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img src="img/nossaEstrutura/bercarios.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">berçarios</figcaption>
+          </div>
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img src="img/nossaEstrutura/brinquedoteca.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Brinquedoteca</figcaption>
+          </div>
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img src="img/nossaEstrutura/park.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Parquinho</figcaption>
+          </div>
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img src="img/nossaEstrutura/playground.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Playground</figcaption>
+          </div>
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img src="img/nossaEstrutura/cinema.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Cinema</figcaption>
+          </div>
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img src="img/nossaEstrutura/piscina.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Piscina</figcaption>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
@@ -301,6 +319,19 @@
         span.innerHTML = '';
       });
     }
+  </script>
+  <script src="js/slider.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
   </script>
 </body>
 
