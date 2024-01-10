@@ -51,22 +51,22 @@
         <h2 class="text-3xl font-semibold text-roxo mb-8 text-center">Fale conosco</h2>
       </div>
       <div class="md:w-10/12 md:mx-auto">
-        <form class="space-y-3" action="processar_formulario.php" method="post">
+        <form class="space-y-3" id="formCadastro" action="">
           <div class="flex flex-col space-y-1">
-            <label for="nome">Nome completo:</label>
-            <input class="border-2 border-slate-400 rounded py-2 px-4" type="text" id="nome" name="nome" required>
+            <label for="username">Nome completo</label>
+            <input type="text" id="username" name="username" class="border-2 border-slate-400 rounded py-2 px-4">
+            <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
           </div>
+
           <div class="flex flex-col space-y-1">
-            <label for="whatsapp">Whatsapp:</label>
-            <input class="border-2 border-slate-400 rounded py-2 px-4" type="tel" id="whatsapp" name="whatsapp" required>
+            <label for="email">*E-mail:</label>
+            <input type="email" id="email" name="email" class="border-2 border-slate-400 rounded py-2 px-4">
+            <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
           </div>
-          <div class="flex flex-col space-y-1">
-            <label for="email">E-mail:</label>
-            <input class="border-2 border-slate-400 rounded py-2 px-4" type="email" id="email" name="email" required>
-          </div>
+
           <div class="flex flex-col space-y-1">
             <label for="assunto">Assunto:</label>
-            <input class="border-2 border-slate-400 rounded py-2 px-4" type="text" id="assunto" name="assunto" required>
+            <input class="border-2 border-slate-400 rounded py-2 px-4" type="text" id="assunto" name="assunto">
           </div>
           <div class="flex flex-col space-y-1">
             <label for="mensagem">Mensagem:</label>
@@ -120,6 +120,51 @@
       let list = document.querySelector('ul');
 
       e.name === 'menu' ? (e.name = "close", list.classList.add('top-[130px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[130px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
+  <script>
+    function validarFormulario() {
+      // Limpa mensagens de erro anteriores
+      resetarMensagensErro();
+
+      // Obtém os valores dos campos
+      var nome = document.getElementById('nome').value;
+      var whatsapp = document.getElementById('whatsapp').value;
+      var email = document.getElementById('email').value;
+
+      // Validação do campo nome
+      if (nome.length < 3) {
+        exibirMensagemErro('erro-nome', 'O nome deve conter pelo menos 3 caracteres.');
+        return false;
+      }
+
+      // Validação do campo whatsapp
+      var regexWhatsapp = /^\(\d{2}\) \d{9}$/;
+      if (!regexWhatsapp.test(whatsapp)) {
+        exibirMensagemErro('erro-whatsapp', 'O número do WhatsApp deve estar no formato (00) 000000000.');
+        return false;
+      }
+
+      // Validação do campo email
+      if (email.indexOf('@') === -1) {
+        exibirMensagemErro('erro-email', 'O e-mail deve conter o caractere "@" obrigatoriamente.');
+        return false;
+      }
+
+      // Se todas as validações passarem, o formulário é enviado
+      return true;
+    }
+
+    function exibirMensagemErro(idCampo, mensagem) {
+      var spanErro = document.getElementById(idCampo);
+      spanErro.innerHTML = mensagem;
+    }
+
+    function resetarMensagensErro() {
+      var spansErro = document.querySelectorAll('.error-message');
+      spansErro.forEach(function (span) {
+        span.innerHTML = '';
+      });
     }
   </script>
 </body>
