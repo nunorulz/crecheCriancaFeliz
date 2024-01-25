@@ -8,7 +8,6 @@
   <title>Creche e Berçario Criança Feliz</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/validacao.css">
-  <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -16,6 +15,7 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="js/form.js" defer></script>
+  <script src="js/main.js" defer></script>
   <style>
     .error-message {
       color: red;
@@ -49,14 +49,14 @@
     </div>
   </header>
   <div>
-    <img class="w-full" src="img/bannerPrincipal.jpg" alt="Imagem banner principal com uma criança sorrindo">
+    <img class="w-full max-w-[1520px] mx-auto" src="img/bannerPrincipal.jpg" alt="Imagem banner principal com uma criança sorrindo">
   </div>
   <!--Início Sobre a Criança Feliz-->
   <section class="py-10 md:py-24 bg-cinzaNuvem">
     <div class="md:flex w-10/12 mx-auto max-w-[1200px]">
       <div class="mb-8 md:w-2/3">
-        <h2 class="text-3xl font-semibold text-turqueza mb-6">Sobre a Criança Feliz</h2>
-        <p class="text-[1rem] mb-8 md:pr-10">A <em>Creche Criança Feliz</em> é mais do que uma instituição de cuidados infantis; somos uma família que se preocupa com o bem-estar e o futuro de suas crianças. Estamos comprometidos em criar um ambiente onde as crianças possam crescer, aprender e, acima de tudo, serem felizes. Obrigado por considerar a Creche Criança Feliz como seu parceiro de confiança na educação e cuidado de suas crianças. Estamos ansiosos para recebê-los em nossa comunidade.</p>
+        <h2 class="text-3xl font-semibold text-turqueza mb-6 uppercase"></h2>
+        <p class="md:text-base text-[1.1rem] mb-8 md:pr-10"></p>
         <a class="uppercase bg-rosa hover:bg-rosaHover text-white px-4 py-2 rounded-full text-sm" href="quemSomos.html">Leia mais sobre nós</a>
       </div>
       <div class="md:w-1/3">
@@ -73,7 +73,7 @@
   <section class="w-10/12 mx-auto max-w-[1200px] py-10 md:py-24">
     <div class="">
       <div>
-        <h2 class="text-3xl font-semibold text-turqueza mb-6 md:text-center">Nossos Colaboradores</h2>
+        <h2 class="text-3xl font-semibold text-turqueza mb-6 md:text-center uppercase">Nossos Colaboradores</h2>
       </div>
       <div class="md:flex md:justify-between space-y-6">
         <article class="w-full flex flex-col items-center md:pt-6">
@@ -92,7 +92,7 @@
           <div class="z-10 mb-[-40px]"><img src="img/colaboradores/mariaPaula.png" alt="Maria Paula"></div>
           <div class="bg-ciano w-10/12 rounded-xl pb-4 px-10 pt-12">
             <h3 class="text-center font-semibold text-2xl md:text-xl">Maria Paula</h3>
-            <p class="text-center">Coord. Pedagógica</p>
+            <p class="text-center">Profª Natação</p>
             <div class="flex justify-center bg-white py-2 space-x-4 rounded-full mt-3">
               <a href="#"><img src="img/colaboradores/iconeLinkedin.png" alt="Linkedin"></a>
               <a href="#"><img src="img/colaboradores/iconeInsta.png" alt="Instagram"></a>
@@ -104,7 +104,7 @@
           <div class="z-10 mb-[-40px]"><img src="img/colaboradores/lailaCristina.png" alt="Laila Cristina"></div>
           <div class="bg-rosaLeve w-10/12 rounded-xl pb-4 px-10 pt-12">
             <h3 class="text-center font-semibold text-2xl md:text-xl">Laila Cristina</h3>
-            <p class="text-center">Coord. Pedagógica</p>
+            <p class="text-center">Profª Artes</p>
             <div class="flex justify-center bg-white py-2 space-x-4 rounded-full mt-3">
               <a href="#"><img src="img/colaboradores/iconeLinkedin.png" alt="Linkedin"></a>
               <a href="#"><img src="img/colaboradores/iconeInsta.png" alt="Instagram"></a>
@@ -116,7 +116,7 @@
           <div class="z-10 mb-[-40px]"><img src="img/colaboradores/pedroFelipe.png" alt="Ana Luiza"></div>
           <div class="bg-ciano w-10/12 rounded-xl pb-4 px-10 pt-12">
             <h3 class="text-center font-semibold text-2xl md:text-xl">Pedro Felipe</h3>
-            <p class="text-center">Coord. Pedagógica</p>
+            <p class="text-center">Profª Música</p>
             <div class="flex justify-center bg-white py-2 space-x-4 rounded-full mt-3">
               <a href="#"><img src="img/colaboradores/iconeLinkedin.png" alt="Linkedin"></a>
               <a href="#"><img src="img/colaboradores/iconeInsta.png" alt="Instagram"></a>
@@ -133,14 +133,51 @@
   <!--Fim Nossos Colaboradores-->
   <!--Início Nossa Estrutura-->
   <img class="w-full" src="img/vetorNossaEstrutura.png">
-  <section class="bg-ciano">
+  <!--Versão mobile-->
+  <section class="bg-ciano md:hidden block">
     <div class="w-10/12 mx-auto max-w-[1200px] py-10 md:py-24">
       <div>
-        <h2 class="text-3xl font-semibold text-turqueza mb-8 md:text-center">Nossa Estrutura</h2>
+        <h2 class="text-3xl font-semibold text-turqueza mb-8 md:text-center uppercase text-center">Nossa Estrutura</h2>
+      </div>
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img class="mx-auto w-full" src="img/nossaEstrutura/bercarios.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">berçarios</figcaption>
+          </div>
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img class="mx-auto w-full" src="img/nossaEstrutura/brinquedoteca.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Brinquedoteca</figcaption>
+          </div>
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img class="mx-auto w-full" src="img/nossaEstrutura/park.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Parquinho</figcaption>
+          </div>
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img class="mx-auto w-full" src="img/nossaEstrutura/playground.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Playground</figcaption>
+          </div>
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img class="mx-auto w-full" src="img/nossaEstrutura/cinema.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Cinema</figcaption>
+          </div>
+          <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
+            <img class="mx-auto w-full" src="img/nossaEstrutura/piscina.png">
+            <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">Piscina</figcaption>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-ciano md:block hidden">
+    <div class="w-10/12 mx-auto max-w-[1200px] py-10 md:py-24">
+      <div>
+        <h2 class="text-3xl font-semibold text-turqueza mb-8 md:text-center uppercase">Nossa Estrutura</h2>
       </div>
 
       <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper mb-6">
           <div class="swiper-slide bg-white rounded-xl px-5 pt-5 pb-8 flex flex-col shadow-md">
             <img src="img/nossaEstrutura/bercarios.png">
             <figcaption class="uppercase text-turqueza text-center font-semibold mt-4 md:text-xl text-2xl">berçarios</figcaption>
@@ -173,7 +210,7 @@
   <!--Fim Nossa Estrutura-->
   <!--Início Nossos Planos-->
   <section class="bg-amarelo">
-    <div class="w-10/12 mx-auto max-w-[1200px] py-10 md:py-24 flex flex-col-reverse md:flex-row md:items-center md:space-x-4">
+    <div class="w-10/12 mx-auto max-w-[1200px] py-10 md:py-16 flex flex-col-reverse md:flex-row md:items-center md:space-x-4">
       <div class="mt-8 md:w-1/2">
         <img class="w-full" src="img/nossosPlanos/imaNossosPlanosHome.png" alt="Imagem">
       </div>
@@ -187,14 +224,14 @@
             <div class="py-6">
               <p class="text-white">Mussum Ipsum, cacilds vidis litro abertis. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Admodum accumsan disputationi. Vide electram sadipscing et per.</p>
             </div>
-            <div class="bg-white uppercase text-roxo font-semibold text-center py-[1px] rounded-md text-xl"><a href="#">saiba mais</a></div>
+            <div class="bg-white uppercase text-roxo font-semibold text-center py-[1px] rounded-md text-xl"><a href="planos.html">saiba mais</a></div>
           </article>
           <article class="bg-turqueza p-5 rounded-xl">
             <h3 class="bg-white uppercase text-turqueza font-semibold text-center py-2 rounded-md text-2xl">Período integral</h3>
             <div class="py-6">
               <p class="text-white">Mussum Ipsum, cacilds vidis litro abertis. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Admodum accumsan disputationi. Vide electram sadipscing et per.</p>
             </div>
-            <div class="bg-white uppercase text-roxo font-semibold text-center py-[1px] rounded-md text-xl"><a href="#">saiba mais</a></div>
+            <div class="bg-white uppercase text-roxo font-semibold text-center py-[1px] rounded-md text-xl"><a href="planos.html">saiba mais</a></div>
           </article>
         </div>
       </div>
@@ -210,7 +247,7 @@
     <div class="w-10/12 md:w-1/2 mx-auto py-10 md:py-24">
       <!-- Conteúdo da segunda div -->
       <div class="">
-        <h2 class="text-3xl font-semibold text-turqueza mb-8 text-center">Fale conosco</h2>
+        <h2 class="text-4xl font-semibold text-turqueza mb-8 text-center">Fale conosco</h2>
       </div>
       <div class="md:w-10/12 md:mx-auto">
         <form class="space-y-3" id="formCadastro" action="">
@@ -320,13 +357,22 @@
       });
     }
   </script>
-  <script src="js/slider.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
       spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper1", {
+      slidesPerView: 1,
+      spaceBetween: 0,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
