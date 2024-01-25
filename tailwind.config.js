@@ -16,6 +16,9 @@ module.exports = {
         amarelo: '#FAC500',
       },
     },
+    fontFamily: {
+      Nunito: ['Nunito'],
+    },
   },
   plugins: [],
 };
